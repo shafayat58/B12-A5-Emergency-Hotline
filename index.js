@@ -42,18 +42,8 @@ for (let i = 0; i < callButtons.length; i++) {
   };
 }
 
-// Add to call history
-function addToHistory(name, number) {
-  let historyContainer = document.getElementById("callHistory");
 
-  let historyItem = document.createElement("div");
-  historyItem.className = "flex justify-between p-5 bg-[#fafafa] shadow rounded-[8px]";
 
-  historyItem.innerHTML =
-    "<div><h1>" + name + "</h1><p>" + number + "</p></div>" +
-    "<div><h2>" + new Date().toLocaleTimeString() + "</h2></div>";
 
-  historyContainer.prepend(historyItem);
-}
 
 
