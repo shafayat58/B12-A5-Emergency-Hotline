@@ -4,11 +4,11 @@
   justify-items: center;
   background-color: rgba(0, 0, 0, 0.03);
   margin-bottom: 8px;
-  padding:   20px 22px;
+  padding:  10px 24px;
   height: 85px;
   width: 400px;
   border-radius: 10px;
-  margin-left: 10px;
+  
 }
 
 .datetime {
