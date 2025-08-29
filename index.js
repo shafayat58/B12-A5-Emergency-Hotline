@@ -98,3 +98,67 @@ function historyUpdate(callDestination, callNumber) {
 document.getElementById("clear-history").addEventListener("click", function () {
   document.getElementById("history-content").innerHTML = "";
 });
+
+
+
+
+
+    // copy handaller
+    document.addEventListener('DOMContentLoaded', () => {
+      // Optional copy counter
+      const copyCountEl = document.getElementById('copyCount');
+  let copyCount = parseInt(copyCountEl?.textContent || '0', 10) || 0;
+
+  
+  function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          return navigator.clipboard.writeText(text);
+        }
+  
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try {document.execCommand('copy'); } finally {document.body.removeChild(ta); }
+  return Promise.resolve();
+      }
+
+     
+      document.addEventListener('click', async (e) => {
+        const btn = e.target.closest('.copy-btn');
+  if (!btn) return;
+
+  
+  let textToCopy = btn.dataset.number;
+
+  
+  if (!textToCopy) {
+          const card = btn.closest('[data-card]');
+  textToCopy = card?.querySelector('[data-copy-text]')?.textContent?.trim();
+        }
+
+  if (!textToCopy) {
+    alert('Nothing to copy for this card.');
+  return;
+        }
+
+  try {
+    await copyText(textToCopy);
+
+ 
+  if (copyCountEl) {
+    copyCount += 1;
+  copyCountEl.textContent = String(copyCount);
+          }
+
+  
+  alert('Copied: ' + textToCopy);
+        } catch (err) {
+    console.error('Copy failed:', err);
+  alert('Copy failed. Please copy manually.');
+        }
+      });
+    });
+
