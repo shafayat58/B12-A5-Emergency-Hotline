@@ -6,9 +6,10 @@
   margin-bottom: 8px;
   padding: 10px 24px;
   height: 85px;
-  width: 440px;
+  width: 420px;
   border-radius: 10px;
 }
+
 .datetime {
   display: flex;
   flex-direction: column;

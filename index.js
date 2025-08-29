@@ -17,6 +17,8 @@ for (let i = 1; i <= 9; i++) {
   }
 }
 
+
+
 // call function
 
 let coinCount = 100;
@@ -85,7 +87,7 @@ function historyUpdate(callDestination, callNumber) {
   time1.innerText = newTime;
   div2.appendChild(time1);
 
-  
+
 
   historyParentDiv.appendChild(div2);
 

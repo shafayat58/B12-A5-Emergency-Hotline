@@ -46,7 +46,7 @@
 
           <button
             class="bg-[#00a63e] text-white rounded-full px-5 py-2 flex items-center justify-center gap-2 w-28 sm:w-[100px]">
-            <span>0</span> Copy
+            <span id="copyCount">0</span> Copy
           </button>
         </div>
       </div>
@@ -69,7 +69,7 @@
       <!-- Cards -->
       <div class="lg:col-span-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
 
-        <!-- Card 1 -->
+
         <div class="bg-white rounded-[12px] shadow-lg p-5 flex flex-col justify-between">
           <div class="flex justify-end">
             <i id="card-heart1" class="fa-solid fa-heart text-red-500 cursor-pointer" data-fav="false"
@@ -96,7 +96,7 @@
           </div>
         </div>
 
-        <!-- Card 2 -->
+
         <div class="bg-white rounded-[12px] shadow-lg p-5 flex flex-col justify-between">
           <div class="flex justify-end">
             <i id="card-heart2" class="fa-solid fa-heart text-red-500 cursor-pointer" data-fav="false"></i>
@@ -122,7 +122,7 @@
           </div>
         </div>
 
-        <!-- Card 3 -->
+
         <div class="bg-white rounded-[12px] shadow-lg p-5 flex flex-col justify-between">
           <div class="flex justify-end">
             <i id="card-heart3" class="fa-solid fa-heart text-red-500 cursor-pointer" data-fav="false"></i>
@@ -174,7 +174,7 @@
           </div>
         </div>
 
-        <!-- Card 5 -->
+
         <div class="bg-white rounded-[12px] shadow-lg p-5 flex flex-col justify-between">
           <div class="flex justify-end">
             <i id="card-heart5" class="fa-solid fa-heart text-red-500 cursor-pointer" data-fav="false"></i>
@@ -200,7 +200,6 @@
           </div>
         </div>
 
-        <!-- Card 6 -->
         <div class="bg-white rounded-[12px] shadow-lg p-5 flex flex-col justify-between">
           <div class="flex justify-end">
             <i id="card-heart6" class="fa-solid fa-heart text-red-500 cursor-pointer" data-fav="false"></i>
@@ -226,7 +225,6 @@
           </div>
         </div>
 
-        <!-- Card 7 -->
         <div class="bg-white rounded-[12px] shadow-lg p-5 flex flex-col justify-between">
           <div class="flex justify-end">
             <i id="card-heart7" class="fa-solid fa-heart text-red-500 cursor-pointer" data-fav="false"></i>
@@ -252,7 +250,7 @@
           </div>
         </div>
 
-        <!-- Card 8 -->
+
         <div class="bg-white rounded-[12px] shadow-lg p-5 flex flex-col justify-between">
           <div class="flex justify-end">
             <i id="card-heart8" class="fa-solid fa-heart text-red-500 cursor-pointer" data-fav="false"></i>
@@ -278,7 +276,7 @@
           </div>
         </div>
 
-        <!-- Card 9 -->
+
         <div class="bg-white rounded-[12px] shadow-lg p-5 flex flex-col justify-between">
           <div class="flex justify-end">
             <i id="card-heart9" class="fa-solid fa-heart text-red-500 cursor-pointer" data-fav="false"></i>
@@ -306,7 +304,7 @@
 
       </div>
 
-      <!-- Sidebar: Call History -->
+      <!--  Call History -->
       <aside class="lg:col-span-3 bg-white min-h-[400px] lg:h-full shadow rounded-[20px]">
         <div class="flex justify-between items-center p-5 md:p-8">
           <div class="flex gap-3 items-center">
@@ -316,7 +314,7 @@
           <button id="clear-history" class="btn bg-[#00A63E] text-white rounded-[20px]">Clear</button>
         </div>
 
-        <!-- Keep EMPTY; JS will append history items -->
+        <!--  JS will append history items -->
         <div id="history-content" class="flex flex-col-reverse gap-3 p-6"></div>
       </aside>
 
